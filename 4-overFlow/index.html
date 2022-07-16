@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overFlow</title>
+</head>
+
+<style>
+    .container{
+        height: 600px;
+        background-color: ccc;
+        border: 1px solid black;
+
+        display: flex;
+        flex-direction: row; /* default*/
+        justify-content: space-evenly;
+        align-items: stretch; /* default*/        
+       
+        flex-wrap: nowrap; /* default*/
+    }
+
+    .item{
+        min-width: 250px;
+        min-height: 100px;
+        background-color: orange;
+        margin: 10px;
+    }
+
+    .overFlow1{
+        overflow: hidden;
+    }
+
+
+</style>
+
+<body>
+
+    <br><br><br>
+    <p>flex-wrap: nowrap;</p>    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <br><br><br>
+    <p>flex-wrap: nowrap;</p>    
+    <P>overflow: hidden;</P>
+    <div class="container overflow1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+</body>
+</html>
