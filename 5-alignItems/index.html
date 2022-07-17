@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignItems</title>
+</head>
+
+<style>
+    .container{
+        height: 600px;
+        background-color: ccc;
+        border: 1px solid black;
+
+        display: flex;
+        flex-direction: row; /* default*/
+        justify-content: space-between; 
+        align-items: stretch; /* default*/        
+       
+        flex-wrap: wrap;
+    }
+
+    .item{
+        min-width: 250px;
+        min-height: 100px;
+        background-color: orange;
+        margin: 10px;
+    }
+
+    .alignItems1{
+        align-items: flex-start;
+    }
+
+    .alignItems2{
+        align-items: flex-end;
+    }
+
+    .alignItems3{
+        align-items: center;
+    }
+
+
+</style>
+
+<body>
+
+    <br><br><br>
+    <p>align-items: stretch;</p>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    
+    <br><br><br>
+    <p>align-items: flex-start;</p>
+    <div class="container alignItems1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    
+    <br><br><br>
+    <p>align-items: flex-end;</p>
+    <div class="container alignItems2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <br><br><br>
+    <p>align-items: center;</p>
+    <div class="container alignItems3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+
+</body>
+</html>
