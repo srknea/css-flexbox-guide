@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignContent</title>
+</head>
+
+<style>
+    .container{
+        height: 800px;
+        width: 800px;
+        background-color: ccc;
+        border: 1px solid black;
+
+        display: flex;
+        flex-direction: row; /* default*/
+        justify-content: space-between; 
+        align-items: flex-end;
+
+        flex-wrap: wrap;
+
+        align-content: flex-start;
+    }
+
+    .item{
+        min-width: 250px;
+        min-height: 100px;
+        background-color: orange;
+        margin: 10px;
+    }
+
+    .item1{
+        height: 110px;
+    }
+    .item2{
+        height: 150px;
+    }
+    .item3{
+        height: 250px;
+    }
+    .item4{
+        height: 110px; 
+    }
+
+    
+    .alignContent1{
+        align-content: flex-end;
+    }
+
+    .alignContent2{
+        align-content: center;
+    }
+
+    .alignContent3{
+        align-content: space-around;
+    }
+
+    .alignContent4{
+        align-content: space-between;
+    }
+
+
+</style>
+
+<body>
+
+    <br><br><br>
+    <p>align-items: flex-end;</p>
+    <p>align-content: flex-start;</p>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+    </div>
+    
+    <br><br><br>
+    <p>align-items: flex-end;</p>
+    <p>align-content: flex-end;</p>
+    <div class="container alignContent1">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+    </div>
+
+    <br><br><br>
+    <p>align-items: flex-end;</p>
+    <p>align-content: center;</p>
+    <div class="container alignContent2">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+    </div>
+
+    <br><br><br>
+    <p>align-items: flex-end;</p>
+    <p>align-content: space-around;</p>
+    <div class="container alignContent3">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+    </div>
+
+    <br><br><br>
+    <p>align-items: flex-end;</p>
+    <p>align-content: space-between;</p>
+    <div class="container alignContent4">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+    </div>
+    
+
+
+</body>
+</html>
