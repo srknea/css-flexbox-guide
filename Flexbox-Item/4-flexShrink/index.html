@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexShrink</title>
+</head>
+<style>
+    .container {
+       height: 400px;
+       background-color: #ccc;
+       border: 1px solid black;
+       display: flex;
+       flex-direction: row;
+       
+    }
+
+    .item{
+        width: 200px;
+        min-height: 100px;
+        background-color: orange;
+        border: 1px solid black;
+        margin:10px;
+    }
+
+    .item1{
+        flex-shrink: 3;
+    }
+
+    .item2{
+        flex-shrink: 5;
+    }
+
+    .item3 {
+        flex-shrink: 0;
+    }   
+
+</style>
+
+<body>
+
+    <br><br><br>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <br><br><br>
+    <div class="container">
+        <div class="item item1">
+            <P>flex-shrink: 3;</P>
+        </div>
+        <div class="item item2">
+            <P>flex-shrink: 5;</P>
+        </div>
+        <div class="item item3">
+            <P>flex-shrink: 0;</P>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
