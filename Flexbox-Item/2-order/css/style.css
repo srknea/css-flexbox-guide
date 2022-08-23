@@ -1,0 +1,29 @@
+.container{
+    height: 400px;
+    background-color: #ccc;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.item{
+    width: 200px;
+    min-height: 100px;
+    border: 1px solid black;
+    margin:10px;
+}
+
+.item1{
+    background-color: orange;
+    order: 3333;
+}
+
+.item2{
+    background-color: cyan;
+    order: -2;
+}
+
+.item3 {
+    background-color: yellow;
+    order: 1;
+}   

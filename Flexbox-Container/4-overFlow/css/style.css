@@ -1,0 +1,25 @@
+.container{
+    height: 600px;
+    background-color: ccc;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: row; /* default*/
+    justify-content: space-evenly;
+    align-items: stretch; /* default*/        
+
+    flex-wrap: nowrap; /* default*/
+}
+
+.item{
+    min-width: 250px;
+    min-height: 100px;
+    background-color: orange;
+    margin: 10px;
+}
+
+.overFlow1{
+    overflow: hidden;
+}
+
+

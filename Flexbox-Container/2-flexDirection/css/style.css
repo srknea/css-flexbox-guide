@@ -1,0 +1,31 @@
+.container{
+    height: 600px;
+    background-color: ccc;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: row; /* default*/
+    justify-content: flex-start; /* default*/
+    align-items: stretch; /* default*/        
+}
+
+.item{
+    min-width: 100px;
+    min-height: 100px;
+    background-color: orange;
+    margin: 10px;
+}
+
+
+
+.flexDirection1{
+    flex-direction: column;
+}
+
+.flexDirection2{
+    flex-direction: row-reverse;
+}
+
+.flexDirection3{
+    flex-direction: column-reverse;
+}
